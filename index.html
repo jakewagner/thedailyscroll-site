@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily Scroll — The internet can wait.</title>
+    <meta
+      name="description"
+      content="Daily Scroll gives your feeds one evening hour—then puts them away. Catch up once a day. The rest of the day is yours."
+    />
+    <meta property="og:title" content="Daily Scroll — The internet can wait." />
+    <meta
+      property="og:description"
+      content="Give the feed an appointment. Catch up once a day. Then close the hour."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/screens/daily-edition.jpg" />
+    <link rel="icon" href="assets/sparkle.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      Store CTA placeholder.
+      When you have a listing, set STORE_URL in main.js (and the button will activate).
+    -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark wordmark--nav" href="#top" aria-label="Daily Scroll home">
+        <span class="sparkle sparkle--sm" aria-hidden="true"></span>
+        Daily Scroll
+      </a>
+    </header>
+
+    <main id="main">
+      <!-- 1. Hero -->
+      <section class="hero" id="top" aria-labelledby="hero-brand">
+        <div class="hero__atmosphere" aria-hidden="true">
+          <span class="hero__wash hero__wash--gold"></span>
+          <span class="hero__wash hero__wash--ember"></span>
+          <span class="hero__wash hero__wash--dusk"></span>
+          <span class="hero__spark hero__spark--a"></span>
+          <span class="hero__spark hero__spark--b"></span>
+          <span class="hero__spark hero__spark--c"></span>
+          <span class="hero__horizon"></span>
+        </div>
+        <div class="hero__inner">
+          <h1 id="hero-brand" class="hero__brand reveal" data-reveal>
+            <span class="sparkle sparkle--lg sparkle--twinkle" aria-hidden="true"></span>
+            <span class="hero__brand-name">DailyScroll.club</span>
+          </h1>
+          <p id="hero-promise" class="hero__promise reveal" data-reveal>
+            Make an appointment<br />with your algorithm.
+          </p>
+          <p class="hero__support reveal" data-reveal>
+            Take back the rest of your day.
+          </p>
+          <div class="cta-group reveal" data-reveal>
+            <a
+              class="btn btn--primary btn--coming-soon"
+              id="store-cta"
+              href="#"
+              aria-disabled="true"
+              role="link"
+            >
+              Coming soon
+            </a>
+            <a class="btn btn--ghost" href="#how">See how it works</a>
+          </div>
+          <p class="cta-note reveal" data-reveal>App Store link soon.</p>
+        </div>
+      </section>
+
+      <!-- 2. Observation -->
+      <section class="section section--observation" aria-labelledby="observation-title">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner narrow">
+          <h2 id="observation-title" class="section__title reveal" data-reveal>
+            No excuses, no FOMO.
+          </h2>
+          <p class="section__lead reveal" data-reveal>
+            You can’t be the odd one out if everyone around you is also bound to
+            the same schedule.
+          </p>
+          <p class="section__body reveal" data-reveal>
+            Like old-school prime time TV, it’s on when it’s on. It’s not when
+            it’s not.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. Ritual -->
+      <section class="section section--ritual" id="how" aria-labelledby="ritual-title">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner">
+          <h2 id="ritual-title" class="section__title reveal" data-reveal>
+            Your appointment with your algorithm.
+          </h2>
+          <p class="section__lead reveal" data-reveal>
+            You do not have to quit scrolling. You just have to give it a time
+            and place.
+          </p>
+
+          <ol class="ritual" aria-label="How Daily Scroll works">
+            <li class="ritual__step reveal" data-reveal>
+              <span class="ritual__label">Choose</span>
+              <p>Pick the apps and sites that can wait. This information does not leave your device.</p>
+            </li>
+            <li class="ritual__step reveal" data-reveal>
+              <span class="ritual__label">Pause</span>
+              <p>For most of the day, get reminded to be present. You’ll have your chance to check in later.</p>
+            </li>
+            <li class="ritual__step ritual__step--edition reveal" data-reveal>
+              <span class="ritual__label">Check-in</span>
+              <p>From <strong>7:00–8:00&nbsp;PM</strong>, your Daily Edition goes live. Check your feeds at the same time as everyone around you.</p>
+            </li>
+          </ol>
+
+          <div class="edition-visual reveal" data-reveal aria-hidden="true">
+            <div class="edition-visual__track">
+              <div class="edition-visual__day">
+                <span>Apps paused</span>
+              </div>
+              <div class="edition-visual__hour">
+                <span class="edition-visual__hand"></span>
+                <span>Daily Edition · 7–8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__inner shot-strip reveal" data-reveal>
+          <figure class="shot">
+            <img
+              src="assets/screens/paused-apps.jpg"
+              width="600"
+              height="1304"
+              alt="Apps and Sites screen showing eight social apps paused until the Edition."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">Choose</figcaption>
+          </figure>
+          <figure class="shot">
+            <img
+              src="assets/screens/shield.jpg"
+              width="600"
+              height="1304"
+              alt="Shield screen saying Not now, with Remain Present, and a note that the Edition opens at 19:00."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">Pause</figcaption>
+          </figure>
+          <figure class="shot">
+            <img
+              src="assets/screens/daily-edition.jpg"
+              width="600"
+              height="1304"
+              alt="Today screen during Daily Edition with apps available for thirty-eight minutes and a twelve-day streak."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">Check-in</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 4. Social -->
+      <section class="section section--together" aria-labelledby="together-title">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner narrow">
+          <h2 id="together-title" class="section__title reveal" data-reveal>
+            Works better with friends.
+          </h2>
+          <p class="section__lead reveal" data-reveal>
+            Choose a custom time that is best suited to you and your friends.
+            Help keep each other accountable. Take back your day in a supportive
+            environment.
+          </p>
+          <p class="section__body reveal" data-reveal>
+            Together we can break free from the grip of the algorithm.
+          </p>
+        </div>
+
+        <div class="section__inner shot-strip shot-strip--pair reveal" data-reveal>
+          <figure class="shot">
+            <img
+              src="assets/screens/group.jpg"
+              width="600"
+              height="1304"
+              alt="Group tab for Evening Circle, opening together at 19:00 with eight members."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">One shared hour</figcaption>
+          </figure>
+          <figure class="shot">
+            <img
+              src="assets/screens/group-edition.jpg"
+              width="600"
+              height="1304"
+              alt="Today screen during Group Edition with Evening Circle apps available for twenty-two minutes."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">Unlocks for the whole group</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 5. Reassurance -->
+      <section class="section section--ease" aria-labelledby="ease-title">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner narrow">
+          <h2 id="ease-title" class="section__title reveal" data-reveal>
+            Reasonable limits, healthy boundaries.
+          </h2>
+          <p class="section__lead reveal" data-reveal>
+            You don’t need to delete apps to try to not use them.
+          </p>
+          <ul class="ease-list">
+            <li class="reveal" data-reveal>
+              <strong>Built for real life.</strong>
+              Temporary Access is there when you need it.
+            </li>
+            <li class="reveal" data-reveal>
+              <strong>Private by design.</strong>
+              Your info stays on your device.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section__inner shot-strip shot-strip--single reveal" data-reveal>
+          <figure class="shot">
+            <img
+              src="assets/screens/group-paused.jpg"
+              width="600"
+              height="1304"
+              alt="Today screen with apps paused until Evening Circle Edition, plus Temporary and Emergency Access actions."
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="shot__caption">
+              A practical boundary you can live with
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 6. Soft close -->
+      <section class="section section--close" aria-labelledby="close-title">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner narrow close-inner">
+          <span class="sparkle sparkle--md sparkle--twinkle reveal" data-reveal aria-hidden="true"></span>
+          <h2 id="close-title" class="close__title reveal" data-reveal>
+            The algorithm will be there when you get back.
+          </h2>
+          <div class="cta-group reveal" data-reveal>
+            <a
+              class="btn btn--primary btn--coming-soon"
+              id="store-cta-footer"
+              href="#"
+              aria-disabled="true"
+              role="link"
+            >
+              Coming soon
+            </a>
+          </div>
+          <p class="cta-note reveal" data-reveal>App Store link soon.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__brand">
+          <span class="sparkle sparkle--sm" aria-hidden="true"></span>
+          DailyScroll.club
+        </p>
+        <p class="site-footer__note">
+          The algorithm can wait.
+        </p>
+        <p class="site-footer__meta">
+          <span>&copy; <span id="year">2026</span> DailyScroll.club</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
