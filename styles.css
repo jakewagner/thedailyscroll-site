@@ -930,3 +930,98 @@ a {
     max-width: min(100%, 18rem);
   }
 }
+
+/* Join invite landing (desktop / no-app fallback) */
+
+.join-page .site-header {
+  position: relative;
+}
+
+.join-page .wordmark--nav {
+  color: var(--ink);
+}
+
+.join-page .wordmark--nav .sparkle {
+  background-color: var(--flame);
+}
+
+.join {
+  width: min(100%, var(--narrow));
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.join__panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.join__eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.join__title {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.join__lead {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.join__code {
+  margin: 0.5rem 0 0;
+  padding: 1rem 1.25rem;
+  font-size: clamp(1.6rem, 5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1.5px solid rgba(166, 97, 26, 0.16);
+  border-radius: 1rem;
+}
+
+.join__actions {
+  margin-top: 0.5rem;
+}
+
+.join-page .btn--ghost {
+  color: var(--ink);
+  border-color: rgba(166, 97, 26, 0.28);
+}
+
+.join__status {
+  margin: 0;
+  min-height: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--edition);
+}
+
+.join__home {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.join__home a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.join__home a:hover,
+.join__home a:focus-visible {
+  color: var(--flame);
+}

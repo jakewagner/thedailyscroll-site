@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join a group — Daily Scroll</title>
+    <meta
+      name="description"
+      content="Open this invite in Daily Scroll to join a Group Edition."
+    />
+    <meta property="og:title" content="Join a group — Daily Scroll" />
+    <meta
+      property="og:description"
+      content="Use this invite code in Daily Scroll to join a Group Edition."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="join-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark wordmark--nav" href="/" aria-label="Daily Scroll home">
+        <span class="sparkle sparkle--sm" aria-hidden="true"></span>
+        Daily Scroll
+      </a>
+    </header>
+
+    <main id="main" class="join">
+      <section class="join__panel" aria-labelledby="join-title">
+        <p class="join__eyebrow">Group invite</p>
+        <h1 id="join-title" class="join__title">Join a Group Edition</h1>
+
+        <div id="join-ready" hidden>
+          <p class="join__lead">
+            Open Daily Scroll on your phone, go to Group, and enter this code — or tap
+            Open in app if the app is installed.
+          </p>
+          <p class="join__code" id="join-code" aria-label="Invite code"></p>
+          <div class="cta-group join__actions">
+            <button type="button" class="btn btn--primary" id="copy-code">Copy code</button>
+            <a class="btn btn--ghost join__open-app" id="open-app" href="#">Open in app</a>
+          </div>
+          <p class="join__status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div id="join-missing" hidden>
+          <p class="join__lead">
+            This invite link is incomplete. Ask your group for a fresh link or code.
+          </p>
+        </div>
+
+        <p class="join__home">
+          <a href="/">Back to DailyScroll.club</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="join.js" defer></script>
+  </body>
+</html>
