@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#8D029B" />
+    <title>Join a chapter — Daily Scroll Club</title>
+    <meta
+      name="description"
+      content="Open this invite in Daily Scroll Club to join a shared chapter."
+    />
+    <meta property="og:title" content="Join a chapter — Daily Scroll Club" />
+    <meta
+      property="og:description"
+      content="Open this invite in Daily Scroll Club to join a shared chapter."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dailyscroll.club/assets/og.png?v=2" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://dailyscroll.club/assets/og.png?v=2" />
+    <link rel="preload" href="../fonts/Modak-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="join-page">
+    <div class="page-wash" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="lockup" href="/" aria-label="Daily Scroll Club home">
+        <span class="lockup__name">Daily Scroll Club</span>
+      </a>
+    </header>
+
+    <main id="main" class="join">
+      <section class="join__panel">
+        <p class="join__eyebrow" id="join-eyebrow">Chapter invite</p>
+        <h1 class="join__code" id="join-code" hidden></h1>
+        <div id="join-missing" hidden>
+          <h1 class="join__title">This invite isn’t valid.</h1>
+          <p class="join__note">Ask your chapter for a new link.</p>
+        </div>
+
+        <div class="join__ready" id="join-ready" hidden>
+          <a
+            class="btn btn--primary"
+            id="open-app"
+            href="#"
+            hidden
+            aria-label="Open Daily Scroll Club"
+          >Open in app</a>
+          <button type="button" class="btn btn--primary" id="copy-code">Copy invite</button>
+          <p class="join__links" id="join-links">
+            <a href="https://apps.apple.com/app/id6792401715">Get the app</a>
+          </p>
+          <p class="visually-hidden" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="join.js" defer></script>
+  </body>
+</html>

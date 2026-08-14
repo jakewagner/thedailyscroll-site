@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8WN245Z3R8.com.thedailyscroll.app"],
+        "components": [
+          { "/": "/join" },
+          { "/": "/join/" },
+          { "/": "/join/*" },
+          { "/": "/join", "?": { "code": "*" } },
+          { "/": "/join/", "?": { "code": "*" } }
+        ]
+      }
+    ]
+  }
+}
